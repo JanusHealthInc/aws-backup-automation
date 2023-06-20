@@ -16,17 +16,17 @@ Metadata:
           - pTagValue1
     ParameterLabels:
       pCrossAccountBackupRole:
-        default: Enter an IAM Role Name
+        default: AWSBackupDefaultServiceRole
       pBackupKeyAlias:
-        default: Backup KMS Key Alias Name
+        default: arn:aws:kms:us-east-1:936453233046:key/e699a114-8446-4267-8ef8-f36319ded5cd
       pCentralBackupVaultName:
-        default: Backup vault name (Case sensitive)
+        default: Backup-vault 
       pOrganizationId:
-        default: Organization ID
+        default: 936453233046
       pTagKey1:
-        default: Tag Key
+        default: name
       pTagValue1:
-        default: Tag Value
+        default: vamon
 Parameters:
   pCrossAccountBackupRole:
     Type: String
