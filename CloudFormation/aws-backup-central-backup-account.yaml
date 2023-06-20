@@ -3,7 +3,7 @@ Description: This template creates the central backup KMS Key and Vault required
   It should be deployed in each member account.
 Metadata:
   AWS::CloudFormation::Interface:
-    ParameterGroups:
+    ParameterGroups: 
       -
         Label:
           default: AWS Backup Configuration
