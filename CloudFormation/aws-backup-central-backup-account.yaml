@@ -3,7 +3,7 @@ Description: This template creates the central backup KMS Key and Vault required
   It should be deployed in each member account.
 Metadata:
   AWS::CloudFormation::Interface:
-    ParameterGroups: 
+    ParameterGroups:
       -
         Label:
           default: AWS Backup Configuration
@@ -16,17 +16,17 @@ Metadata:
           - pTagValue1
     ParameterLabels:
       pCrossAccountBackupRole:
-        default: AWSBackupDefaultServiceRole
+        default: Enter an IAM Role Name
       pBackupKeyAlias:
-        default: arn:aws:kms:us-east-1:936453233046:key/e699a114-8446-4267-8ef8-f36319ded5cd
+        default: Backup KMS Key Alias Name
       pCentralBackupVaultName:
-        default: Backup-vault 
+        default: Backup vault name (Case sensitive)
       pOrganizationId:
-        default: 936453233046
+        default: Organization ID
       pTagKey1:
-        default: name
+        default: Tag Key
       pTagValue1:
-        default: vamon
+        default: Tag Value
 Parameters:
   pCrossAccountBackupRole:
     Type: String
