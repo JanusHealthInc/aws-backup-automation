@@ -14,11 +14,11 @@ Metadata:
           - pTagValue1
     ParameterLabels:
       pCrossAccountBackupRole:
-        default: Enter an IAM Role Name
+        default: AWSBackupDefaultServiceRole
       pTagKey1:
-        default: Enter a Tag Key
+        default: name
       pTagValue1:
-        default: Enter a Tag Value
+        default: vamon
 Parameters:
   pCrossAccountBackupRole:
     Type: String
